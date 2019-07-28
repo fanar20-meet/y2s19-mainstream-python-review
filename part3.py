@@ -7,8 +7,15 @@ NUMBERS_TO_LETTERS = {0:'a', 1:'b', 2:'c', 3:'d', 4:'e', 5:'f', 6:'g', 7:'h', 8:
 					  12:'m', 13:'n', 14:'o', 15:'p', 16:'q', 17:'r', 18:'s', 19:'t', 20:'u', 21:'v', 22:'w',
 					  23: 'x', 24: 'y', 25: 'z'}
 
+LETTER_TO_LETTERS = {}
+
 def createShiftDictionary(s):
-	pass
+	for i in LETTERS_TO_NUMBERS():
+		a = NUMBERS_TO_LETTERS[i] 
+		b = a + s
+		c = NUMBERS_TO_LETTERS[b]
+
+	
 
 def encode(plaintext, s):
 	pass
@@ -18,3 +25,7 @@ def decode(ciphertext, s):
 
 def decodeAll(ciphertext):
 	pass
+
+
+
+createShiftDictionary()
